@@ -1,0 +1,329 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+.wrap {
+    width: 1400px; 
+    position: relative;
+    margin: auto;
+}
+
+.logo {
+    font-size: 55px;
+    font-weight: 600;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(200, 208, 215);
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    top: 0;
+    background-color: rgb(17, 21, 27);
+    line-height: 90px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li a {
+    padding: 0px 16px 0px 16px;
+    color: rgb(137, 141, 147);
+    font-weight: 650;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: aliceblue;
+}
+
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    margin-bottom: -300px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+header .deskripsi{
+    font-size: 70px;
+    position: relative;
+    left: 30px;
+}
+
+
+
+section {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: rgb(17, 21, 27);
+    color: rgb(347, 331, 337);
+    margin-top: -160px;
+}   
+
+.background {
+    transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+position: relative;
+left: -200px;
+}
+
+.background {
+    position: absolute;
+    left: -10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.foreground {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    right: 300px;
+    bottom: 100px;
+}
+
+.deskripsi {
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    right: 80px;
+    bottom: 270px;
+    color: aliceblue;
+}
+
+
+.profesi {
+    color: aliceblue;
+    position: relative;
+    right: 440px;
+    bottom: 225px;
+    font-size: 18px;
+}
+
+.isi {
+    color: aliceblue;
+    position: relative;
+    left: 600px;
+    bottom: 540px;
+    margin-right: 800px;
+    font-size: 25px;
+}
+
+.biodata {
+    color: aliceblue;
+    position: relative;
+    left: 600px;
+    bottom: 480px;
+    overflow: hidden;
+    margin-bottom: -251px;
+    font-size: 20px;
+}
+
+.biodata li:nth-child(odd) {
+    font-weight: 600;
+}
+
+.biodata li:nth-child(even) {
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.hobi {
+    font-weight: 600;
+    overflow: hidden;
+    color: aliceblue;
+    position: relative;
+    left: 870px;
+    bottom: 370px;
+    font-size: 20px;
+}
+
+.hobi li {
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+#Pendidikan .deskripsi {
+    margin-left: 200px;
+    margin-top: 300px;
+}
+
+.kolom {
+    font-size: 20px;
+}
+
+.kolom .tingkat {
+    margin-top: -250px;
+    margin-left: 120px;
+    overflow: hidden;
+}
+
+
+.kolom .info_pendidikan {
+    margin-top: -355px;
+    margin-left: 440px;
+    overflow: hidden;
+}
+
+.perguruan_tinggi{
+    position: relative;
+    top: 30px;
+}
+
+#Skill .deskripsi {
+    margin-left: 740px;
+    margin-top: 300px;
+    margin-bottom: -200px;
+}
+
+.hard_skill {
+    line-height: 60px;
+    overflow: hidden;
+    margin-left: 200px;
+}
+
+.soft_skill {
+    line-height: 60px;
+    overflow: hidden;
+    margin-left: 750px;
+    position: relative;
+    bottom: 320px;
+}
+
+.skills{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.kolom ul {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+#Projek .deskripsi {
+    margin-left: 730px;
+    margin-top: 450px;
+    margin-bottom: -200px;
+}
+#Projek img{
+    margin-bottom: 70px;
+    border-style: outset;
+    border-color: aliceblue;
+    position: relative;
+    left: 250px;
+
+}
+
+#Projek p{
+    position: relative;
+    left: 630px;
+    bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+
+#Pendidikan{
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+#Pendidikan .deskripsi{
+    position: relative;
+    top: -230px;
+    margin-bottom: -240px;
+    text-align: center;
+}
+
+.study_list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.study_place {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.study_place p{
+font-weight: 700; 
+font-size: 30px;
+text-align: center;   
+}
+
+
+#Kontak .deskripsi{
+    position: relative;
+left: 90px;
+top: -20px;
+margin-top: 300px;
+}
+
+#Kontak .kolom{
+    /* position: relative;
+    left: 150px;
+    top: 130px; */
+    background-color: rgb(67, 71, 77);
+    overflow: hidden;
+    /* margin-bottom: 100px; */
+}
+
+.data_sosmed{
+    position: relative;
+    left: 170px;
+    bottom: 90px;
+    overflow: hidden;
+}
+
